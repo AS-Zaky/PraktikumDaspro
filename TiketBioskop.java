@@ -13,7 +13,7 @@ public class TiketBioskop {
         System.out.println("Harga Tiket Bioskop\n Anak: 30.000\n Dewasa: 50000");
         System.out.print("Beli berapa tiket anak: ");
         anak = sc.nextInt();
-        System.out.println("Beli berapa tiket dewasa: ");
+        System.out.print("Beli berapa tiket dewasa: ");
         dewasa = sc.nextInt();
 
         jumlahBeli = anak + dewasa;
