@@ -7,8 +7,8 @@ public class TiketBioskop {
         int hargaTiketDewasa = 50000;
         int hargaTiketAnak = 30000;
         int jumlahBeli, anak, dewasa;
-        boolean diskon;
-        double hargaTotal;
+        int diskon;
+        int hargaTotal;
 
         System.out.println("Harga Tiket Bioskop\n Anak: 30.000\n Dewasa: 50000");
         System.out.print("Beli berapa tiket anak: ");
@@ -18,12 +18,13 @@ public class TiketBioskop {
 
         jumlahBeli = anak + dewasa;
         
-        hargaTotal = (anak * hargaTiketAnak) + (dewasa + hargaTiketDewasa);
+        hargaTotal = (anak * hargaTiketAnak) + (dewasa * hargaTiketDewasa);
 
-        if (jumlahBeli > 5) {
-            hargaTotal = hargaTotal - (hargaTotal * 0.15);
+        if (jumlahBeli >= 5) {
+           diskon = (int) (hargaTotal * 0.15);
+           System.out.println("diskon anda "+ diskon);
+           hargaTotal = hargaTotal - diskon;
         }
-
-        System.out.println("harga total"+ hargaTotal);
+        System.out.println("harga total "+ hargaTotal);
     }
 }
