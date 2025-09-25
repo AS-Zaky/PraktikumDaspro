@@ -3,5 +3,5 @@ public class Test {
         System.out.println("Hi, ini baris kode pertama yang dimodifikasi User 2");
         System.out.println("User 1 menambahkan baris baru");
         System.out.println("User 2 menambahkan baris baru");
-    }
+}
 }
