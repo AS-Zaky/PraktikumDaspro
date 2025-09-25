@@ -22,8 +22,8 @@ public class TiketBioskop {
 
         if (jumlahBeli >= 5) {
            diskon = (int) (hargaTotal * 0.15);
-           System.out.println("diskon anda "+ diskon);
-           hargaTotal = hargaTotal - diskon;
+        System.out.println("diskon anda "+ diskon);
+        hargaTotal = hargaTotal - diskon;
         }
         System.out.println("harga total "+ hargaTotal);
     }
