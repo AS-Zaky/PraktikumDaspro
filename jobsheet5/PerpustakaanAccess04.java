@@ -4,32 +4,18 @@ import java.util.Scanner;
 public class PerpustakaanAccess04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String pesan;
 
         System.out.println("--- Sistem Perpustakaan Kampus ---");
-        System.out.print("Apakah anda anggota perpustakaan? (Ya/Tidak): ");
-        String anggota = sc.nextLine().trim();
+        System.out.print("Apakah membawa kartu mahasiswa? (Ya/Tidak): ");
+        String bawaKartu = sc.nextLine().trim();
 
-        if (anggota.equalsIgnoreCase("Ya")) {
-            System.out.println("Apakah anda memiliki tanggungan denda? (Ya/Tidak: )");
-            String adaDenda = sc.nextLine().trim();
+        System.out.print("Apakah sudah registrasi online? (Ya/Tidak): ");
+        String registrasiOnline = sc.nextLine().trim();
 
-            if (adaDenda.equalsIgnoreCase("Tidak")) {
-                System.out.print("Berapa jumlah buku yang sedang anda pinjam saat ini?: ");
-                int jumlahDipinjam = sc.nextInt();
-
-                if (jumlahDipinjam < 3) {
-                    pesan = "Disetujui: Anda boleh meminjam buku.";
-                } else {
-                    pesan = "Ditolak: Jumlah buku yang sedang dipinjam suda mencapai batas (>=3).";
-                }
-            } else {
-                pesan = "Ditolak: Harap selesaikan denda terlebih dahulu.";
-            }
+        if (bawaKartu.equalsIgnoreCase("Ya") || registrasiOnline.equalsIgnoreCase("Ya")) {
+            System.out.println("Izin masuk diberikan.");
         } else {
-            pesan = "Ditolakk: Hanya anggota yang boleh meminjam buku.";
+            System.out.println("Ditolak masuk, tidak memenuhi syarat.");
         }
-
-        System.out.println(pesan);
     }
 }

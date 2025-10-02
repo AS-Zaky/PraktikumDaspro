@@ -4,24 +4,24 @@ import java.util.Scanner;
 public class WifiAksesKampus04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String pesan;
 
-        System.out.println("--- Sistem Akses WIFI Kampus ---");
-        System.out.print("Apakah Anda mahasiswa aktif? (Ya/Tidak): ");
-        String mhsAktif = sc.nextLine().trim();
+        System.out.println("--- Sistem Akses WiFi Kampus ---");
+        System.out.print("Masukkan jenis pengguna (dosen/mahasiswa/lain): ");
+        String jenisPengguna = sc.nextLine().trim();
 
-        if (mhsAktif.equalsIgnoreCase("Ya")) {
-            System.out.print("Anda Mahasiswa aktif. Silakan massukan password WiFi JTI-Polinema: ");
-            String pwwifi = sc.nextLine().trim();
-            if (pwwifi.equals("jtifast!")) {
-                pesan = "Selamat anda terhubung ke WiFi JTI-Polinema";
+        if (jenisPengguna.equalsIgnoreCase("dosen")) {
+            System.out.println("Akses WiFi diberikan (dosen).");
+        } else if (jenisPengguna.equalsIgnoreCase("mahasiswa")) {
+            System.out.print("Masukkan jumlah SKS yang diambil: ");
+            int sks = sc.nextInt();
+
+            if (sks >= 12) {
+                System.out.println("Akses WiFi diberikan (mahasiswa aktif).");
             } else {
-                pesan = "Password anda salah!";
+                System.out.println("Akses ditolak, SKS kurang dari 12.");
             }
         } else {
-            pesan = "Hanya Mahasiswa aktif yang boleh menggunakan WiFi!";
+            System.out.println("Akses ditolak.");
         }
-
-        System.out.println(pesan);
     }
 }
