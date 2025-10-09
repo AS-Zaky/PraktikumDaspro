@@ -7,7 +7,7 @@ public class statusKelulusanMahasiswa {
 
         System.out.print("Nama Mahasiswa\t: ");
         String nama = sc.nextLine();
-        System.out.print("NIM\t\t\t: ");
+        System.out.print("NIM\t\t: ");
         long nim = sc.nextLong();
 
         System.out.println("\nMata Kuliah 1: Algoritma dan Pemrograman");
@@ -48,8 +48,8 @@ public class statusKelulusanMahasiswa {
         }
 
         System.out.println("\n===== HASIL KELULUSAN =====");
-        System.out.println("Nama\t\t\t\t: " + nama);
-        System.out.println("NIM\t\t\t\t: " + nim);
+        System.out.println("Nama\t\t: " + nama);
+        System.out.println("NIM\t\t: " + nim);
         System.out.println("-----------------------------------------------------------");
         System.out.printf("%-25s %-12s %-10s %-10s%n", 
                 "Mata Kuliah", "Nilai Akhir", "Huruf", "Setara");
