@@ -7,10 +7,9 @@ public class statusKelulusanMahasiswa {
 
         System.out.print("Nama Mahasiswa\t: ");
         String nama = sc.nextLine();
-        System.out.print("NIM\t\t: ");
-        int nim = sc.nextInt();
+        System.out.print("NIM\t\t\t: ");
+        long nim = sc.nextLong();
 
-        // --- Mata Kuliah 1 ---
         System.out.println("\nMata Kuliah 1: Algoritma dan Pemrograman");
         System.out.print("Nilai UTS: "); 
         double uts1 = sc.nextDouble();
@@ -20,7 +19,6 @@ public class statusKelulusanMahasiswa {
         double tugas1 = sc.nextDouble();
         double nilaiAkhir1 = (uts1 * 0.3) + (uas1 * 0.4) + (tugas1 * 0.3);
 
-        // --- Mata Kuliah 2 ---
         System.out.println("\nMata Kuliah 2: Struktur Data");
         System.out.print("Nilai UTS: "); 
         double uts2 = sc.nextDouble();
@@ -30,7 +28,6 @@ public class statusKelulusanMahasiswa {
         double tugas2 = sc.nextDouble();
         double nilaiAkhir2 = (uts2 * 0.3) + (uas2 * 0.4) + (tugas2 * 0.3);
 
-        // Konversi nilai ke huruf dan nilai setara
         String huruf1 = konversiHuruf(nilaiAkhir1);
         String huruf2 = konversiHuruf(nilaiAkhir2);
         double setara1 = konversiSetara(nilaiAkhir1);
@@ -50,7 +47,6 @@ public class statusKelulusanMahasiswa {
             statusSemester = "TIDAK LULUS SEMESTER (Salah satu MK tidak lulus)";
         }
 
-        // Output hasil akhir
         System.out.println("\n===== HASIL KELULUSAN =====");
         System.out.println("Nama\t\t\t\t: " + nama);
         System.out.println("NIM\t\t\t\t: " + nim);
@@ -65,11 +61,8 @@ public class statusKelulusanMahasiswa {
         System.out.println("-----------------------------------------------------------");
         System.out.printf("Rata-rata Nilai Akhir\t: %.2f%n", rataRata);
         System.out.println("Status Semester\t\t: " + statusSemester);
-
-        sc.close();
     }
 
-    // Fungsi konversi huruf berdasarkan nilai
     public static String konversiHuruf(double nilai) {
         if (nilai >= 80) return "A";
         else if (nilai >= 73) return "B+";
@@ -80,7 +73,6 @@ public class statusKelulusanMahasiswa {
         else return "E";
     }
 
-    // Fungsi konversi nilai huruf ke angka setara (mutu)
     public static double konversiSetara(double nilai) {
         if (nilai >= 80) return 4.0;
         else if (nilai >= 73) return 3.5;
