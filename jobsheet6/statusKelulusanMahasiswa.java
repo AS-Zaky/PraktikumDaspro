@@ -1,12 +1,14 @@
 package jobsheet6;
 import java.util.Scanner;
 
-public class statusKelulusanNestedIf {
+public class statusKelulusanMahasiswa {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Nama Mahasiswa: ");
+        System.out.print("Nama Mahasiswa\t: ");
         String nama = sc.nextLine();
+        System.out.print("NIM\t: ");
+        int nim = sc.nextInt();
 
         // --- Mata Kuliah 1 ---
         System.out.println("\nMata Kuliah 1: Algoritma dan Pemrograman");
@@ -44,6 +46,7 @@ public class statusKelulusanNestedIf {
 
         System.out.println("\n===== HASIL KELULUSAN =====");
         System.out.printf("Nama: %s%n", nama);
+        System.out.printf("Nim: %s%n", nim);
         System.out.printf("Nilai Akhir Algoritma dan Pemrograman: %.2f%n", nilaiAkhir1);
         System.out.printf("Nilai Akhir Struktur Data: %.2f%n", nilaiAkhir2);
         System.out.printf("Rata-rata Nilai Akhir: %.2f%n", rataRata);
