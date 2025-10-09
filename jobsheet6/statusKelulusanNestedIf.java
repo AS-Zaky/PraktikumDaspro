@@ -1,7 +1,8 @@
 package jobsheet6;
+
 import java.util.Scanner;
 
-public class statusKelulusanPerMataKuliah {
+public class statusKelulusanNestedIf {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -18,5 +19,7 @@ public class statusKelulusanPerMataKuliah {
         int nilaiUAS = sc.nextInt();
         System.out.print("Nilai Tugas\t: ");
         int nilaiTugas = sc.nextInt();
+
+        
     }
 }
