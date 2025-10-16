@@ -36,6 +36,6 @@ public class SiakadWhile04 {
             }
             i++;
         }
-
+        sc.close();
     }
 }
