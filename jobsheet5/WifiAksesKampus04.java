@@ -23,5 +23,7 @@ public class WifiAksesKampus04 {
         } else {
             System.out.println("Akses ditolak.");
         }
+
+        sc.close();
     }
 }

@@ -28,5 +28,7 @@ public class nestedUjianSkripsi04 {
             pesan = "Gagal! Mahasiswa masih memiliki tanggunan kompen";
         }
         System.out.println(pesan);
+
+        sc.close();
     }
 }

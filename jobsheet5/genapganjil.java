@@ -13,5 +13,7 @@ public class genapganjil {
         } else {
             System.out.println("Angka "+angka+" adalah bilangan ganjil.");
         }
+
+        sc.close();
     }
 }

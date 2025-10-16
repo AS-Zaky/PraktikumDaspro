@@ -52,15 +52,17 @@ public class statusKelulusanMahasiswa {
         System.out.println("NIM\t\t: " + nim);
         System.out.println("-----------------------------------------------------------");
         System.out.printf("%-25s %-12s %-10s %-10s%n", 
-                "Mata Kuliah", "Nilai Akhir", "Huruf", "Setara");
+            "Mata Kuliah", "Nilai Akhir", "Huruf", "Setara");
         System.out.println("-----------------------------------------------------------");
         System.out.printf("%-25s %-12.2f %-10s %-10.1f%n", 
-                "Algoritma & Pemrograman", nilaiAkhir1, huruf1, setara1);
+            "Algoritma & Pemrograman", nilaiAkhir1, huruf1, setara1);
         System.out.printf("%-25s %-12.2f %-10s %-10.1f%n", 
-                "Struktur Data", nilaiAkhir2, huruf2, setara2);
+            "Struktur Data", nilaiAkhir2, huruf2, setara2);
         System.out.println("-----------------------------------------------------------");
         System.out.printf("Rata-rata Nilai Akhir\t: %.2f%n", rataRata);
         System.out.println("Status Semester\t\t: " + statusSemester);
+
+        sc.close();
     }
 
     public static String konversiHuruf(double nilai) {

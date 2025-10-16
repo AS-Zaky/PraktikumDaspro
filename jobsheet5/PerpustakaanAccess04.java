@@ -17,5 +17,7 @@ public class PerpustakaanAccess04 {
         } else {
             System.out.println("Ditolak masuk, tidak memenuhi syarat.");
         }
+
+        sc.close();
     }
 }
