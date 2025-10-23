@@ -19,7 +19,7 @@ public class seleksiFilmUmur {
             System.out.println("1. Conjuring");
             System.out.println("2. Horror Apaja");
             System.out.println("3. Film Romatins");
-        } else if (usia > 17) {
+        } else {
             System.out.println("=== Seleksi Film Dewasa ===");
             System.out.println("1. Film Dewasa 1");
             System.out.println("2. Film Dewasa 2");
